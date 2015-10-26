@@ -4,14 +4,10 @@ $prepara = $conexao_pdo->prepare('SELECT * FROM aluno');
 // A classe PDO executa o comando
 $prepara->execute();
 ?>
-<h1>Listando dados tabela com PDO</h1>
+<h1>Listando dados tabela aluno com PDO</h1>
 <table border="1">
 <tr>
-<th>ra</th><th>Alterar</th><th>excluir</th>
-<th>curso</th><th>Alterar</th><th>excluir</th>
-<th>nome</th><th>Alterar</th><th>excluir</th>
-<th>endereco</th><th>Alterar</th><th>excluir</th>
-<th>telefone</th><th>Alterar</th><th>excluir</th>
+<th>ra</th><th>curso</th><th>nome</th><th>endereco</th><th>telefone</th><th>Alterar</th><th>excluir</th>
 </tr>
 <?php
 // Laço para exibir todas as linhas

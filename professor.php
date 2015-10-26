@@ -7,10 +7,7 @@ $prepara->execute();
 <h1>Listando dados tabela com PDO</h1>
 <table border="1">
 <tr>
-<th>codigo</th><th>Alterar</th><th>excluir</th>
-<th>nome</th><th>Alterar</th><th>excluir</th>
-<th>endereco</th><th>Alterar</th><th>excluir</th>
-<th>telefone</th><th>Alterar</th><th>excluir</th>
+<th>codigo</th><th>nome</th><th>endereco</th><th>telefone</th><th>Alterar</th><th>excluir</th>
 </tr>
 <?php
 // Laço para exibir todas as linhas
