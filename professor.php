@@ -12,10 +12,10 @@ $prepara->execute();
 <?php
 // Laço para exibir todas as linhas
 while ( $linha = $prepara->fetch() ) {
-	echo '<tr><td>' . $linha['professor_codigo'] .'</td>';
-	echo '<td>' . $linha['professor_nome']. '</td>';
-	echo '<td>' . $linha['professor_endereco']. '</td>';
-	echo '<td>' . $linha['professor_telefone']. '</td>';
+	echo '<tr><td>' . $linha['codigo'] .'</td>';
+	echo '<td>' . $linha['nome']. '</td>';
+	echo '<td>' . $linha['endereco']. '</td>';
+	echo '<td>' . $linha['telefone']. '</td>';
 	echo '<td>Alterar</td><td>excluir</td></tr>';
 }
 ?>

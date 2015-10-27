@@ -12,9 +12,9 @@ $prepara->execute();
 <?php
 // Laço para exibir todas as linhas
 while ( $linha = $prepara->fetch() ) {
-	echo '<tr><td>' . $linha['curso_codigo'] .'</td>';
-	echo '<td>' . $linha['curso_disciplina']. '</td>';
-	echo '<td>' . $linha['curso_descricao']. '</td>';
+	echo '<tr><td>' . $linha['codigo'] .'</td>';
+	echo '<td>' . $linha['disciplina']. '</td>';
+	echo '<td>' . $linha['descricao']. '</td>';
 	echo '<td>Alterar</td><td>excluir</td></tr>';
 }
 ?>
