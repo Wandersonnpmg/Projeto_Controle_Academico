@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Máquina: localhost
--- Data de Criação: 18-Set-2015 às 23:38
+-- Data de Criação: 27-Out-2015 às 00:16
 -- Versão do servidor: 5.5.34
 -- versão do PHP: 5.3.27
 
@@ -33,7 +33,14 @@ CREATE TABLE IF NOT EXISTS `aluno` (
   `endereco` varchar(60) NOT NULL,
   `telefone` smallint(6) NOT NULL,
   PRIMARY KEY (`ra`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+
+--
+-- Extraindo dados da tabela `aluno`
+--
+
+INSERT INTO `aluno` (`ra`, `curso`, `nome`, `endereco`, `telefone`) VALUES
+(1, 1, 'Wanderson da Silva Rodrigues', 'Rua Alfredo Marcacine 452', 32767);
 
 -- --------------------------------------------------------
 
@@ -46,7 +53,14 @@ CREATE TABLE IF NOT EXISTS `curso` (
   `disciplina` int(11) NOT NULL,
   `descricao` varchar(40) NOT NULL,
   PRIMARY KEY (`codigo`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+
+--
+-- Extraindo dados da tabela `curso`
+--
+
+INSERT INTO `curso` (`codigo`, `disciplina`, `descricao`) VALUES
+(1, 1, 'Sistemas de Informação');
 
 -- --------------------------------------------------------
 
@@ -59,7 +73,14 @@ CREATE TABLE IF NOT EXISTS `disciplina` (
   `professor` int(11) NOT NULL,
   `descricao` varchar(40) NOT NULL,
   PRIMARY KEY (`codigo`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+
+--
+-- Extraindo dados da tabela `disciplina`
+--
+
+INSERT INTO `disciplina` (`codigo`, `professor`, `descricao`) VALUES
+(1, 1, 'Aplicações para Internet');
 
 -- --------------------------------------------------------
 
@@ -73,20 +94,15 @@ CREATE TABLE IF NOT EXISTS `professor` (
   `endereco` varchar(60) NOT NULL,
   `telefone` smallint(6) NOT NULL,
   PRIMARY KEY (`codigo`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+
+--
+-- Extraindo dados da tabela `professor`
+--
+
+INSERT INTO `professor` (`codigo`, `nome`, `endereco`, `telefone`) VALUES
+(1, 'Joabe Fuzaro', 'Avenida Nenê Sabino', 32767);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
-
-INSERT INTO `aluno`.`aluno` (`ra`, `curso`, `nome`, `endereco`, `telefone`) 
-VALUES ('1', '1', 'Wanderson da Silva Rodrigues', 'Rua Alfredo Marcacine 452', '3491397616');
-
-INSERT INTO `curso`.`curso` (`codigo`, `disciplina`, `descricao`) 
-VALUES ('1', '1', 'Sistemas de Informação');
-
-INSERT INTO `disciplina`.`disciplina` (`codigo`, `professor`, `descricao`) 
-VALUES ('1', '1', 'Aplicações para Internet');
-
-INSERT INTO `professor`.`professor` (`codigo`, `nome`, `endereco`, `telefone`) 
-VALUES ('1', 'Joabe Fuzaro', 'Avenida Nenê Sabino', '3433187666');

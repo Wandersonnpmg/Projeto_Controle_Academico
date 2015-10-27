@@ -1,4 +1,4 @@
-<?php include('conexao_aluno.php');
+<?php include('conexao.php');
 // A classe PDO prepara o comando a ser executado
 $prepara = $conexao_pdo->prepare('SELECT * FROM aluno');
 // A classe PDO executa o comando
