@@ -21,4 +21,24 @@ while ( $linha = $prepara->fetch() ) {
 	
 }
 ?>
+<?php
+	$link = "C:\Users\Usuario\controle_academico\aluno.xml"; 
+	$xml = simplexml_load_file($link) -> channel;
+	
+	foreach($xml -> item as $item){  
+		echo "<strong>ra:</strong> ".utf8_decode($item -> number)."<br />"; 
+		echo "<strong>curso:</strong> ".utf8_decode($item -> number)."<br />"; 
+		echo "<strong>nome:</strong> ".utf8_decode($item -> text)."<br />";
+		echo "<strong>endereco:</strong> ".utf8_decode($item -> text)."<br />"; 
+		echo "<strong>telefone:</strong> ".utf8_decode($item -> number)."<br />"; echo "<br />"; 
+	} 
+
+?>
+
+<?php.ini
+	
+    allow_url_fopen = On
+
+?>
+
 </table>

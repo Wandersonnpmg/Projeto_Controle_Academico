@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="professor.xsl"
+type="text/xsl" ?>
+<controle_academico>
+	<professor>
+		<codigo>1</codigo>
+		<nome>Joabe Fuzaro</nome>
+		<endereco>Avenida Nenê Sabino</endereco>
+		<telefone>32767</telefone>
+	</professor>
+</controle_academico>

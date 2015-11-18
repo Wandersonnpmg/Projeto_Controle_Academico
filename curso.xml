@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="curso.xsl"
+type="text/xsl" ?>
+<controle_academico>
+	<curso>
+		<codigo>1</codigo>
+		<disciplina>1</disciplina>
+		<descricao>Sistemas de Informação</descricao>
+	</curso>
+</controle_academico>

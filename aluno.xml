@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="aluno.xsl"
+type="text/xsl" ?>
+<controle_academico>
+	<aluno>
+		<ra>1</ra>
+		<curso>1</curso>
+		<nome>Wanderson da Silva Rodrigues</nome>
+		<endereco>Rua Alfredo Marcacine 452</endereco>
+		<telefone>32767</telefone>
+	</aluno>
+</controle_academico>

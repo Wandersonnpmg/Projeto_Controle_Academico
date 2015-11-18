@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="disciplina.xsl"
+type="text/xsl" ?>
+<controle_academico>
+	<disciplina>
+		<codigo>1</codigo>
+		<professor>1</professor>
+		<descricao>Aplicações para Internet</descricao>
+	</disciplina>
+</controle_academico>

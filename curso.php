@@ -18,4 +18,23 @@ while ( $linha = $prepara->fetch() ) {
 	echo '<td>Alterar</td><td>excluir</td></tr>';
 }
 ?>
+
+<?php
+	$link = "C:\Users\Usuario\controle_academico\curso.xml"; 
+	$xml = simplexml_load_file($link) -> channel;
+	
+	foreach($xml -> item as $item){  
+		echo "<strong>codigo:</strong> ".utf8_decode($item -> number)."<br />"; 
+		echo "<strong>disciplina:</strong> ".utf8_decode($item -> number)."<br />"; 
+		echo "<strong>descricao:</strong> ".utf8_decode($item -> text)."<br />";
+	} 
+
+?>
+
+<?php.ini
+	
+    allow_url_fopen = On
+
+?>
+
 </table>
