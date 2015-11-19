@@ -3,7 +3,26 @@
 <head>
 	<title>curso</title>
     <meta charset="utf-8" />
-	
+    <link rel="stylesheet" href="C:\Users\Usuario\controle_academico\jquery-ui-1.11.4.custom\themes\smoothness\jquery-ui.css">
+	<script src="C:\Users\Usuario\controle_academico\jquery-ui-1.10.4.custom\js\jquery-1.10.2.js"></script>
+    <script src="C:\Users\Usuario\controle_academico\jquery-ui-1.11.4.custom\jquery-ui.js"></script>
+    <script>
+      $(function() {
+        $( "#datepicker" ).datepicker();
+      });
+    </script>
+    <script>
+	  $(function() {
+		$( document ).tooltip();
+	  });
+	</script>
+	<style>
+	  label {
+		display: inline-block;
+		width: 5em;
+	  }
+	</style>
+    
 </head>
 
 <body background="C:\Users\Usuario\controle_academico\imagens\imagem16.jpg">
@@ -11,7 +30,19 @@
 
     <label for="codigo"></label>Codigo:<input type="number" id="codigo" name="codigo" size="7"><br/>
     <label for="disciplina"></label>Disciplina:<input type="number" id="disciplina" name="disciplina" size="1"><br/>
-    <label for="descricao"></label>Descricao:<input type="text" id="descricao" name="descricao" size="40"><br/>
+    <label for="descricao"></label>Descricao:<input title="Informe o nome do curso" type="text" id="descricao" name="descricao" size="40"><br/>
+    <br/>
+    <br/>
+    <br/>
+    <p>Data: <input type="text" id="datepicker"></p>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
     <br/>
     <input type="submit" name="btn1" value="Enviar">
     <input type="reset" name="btn2" value="Limpar Campo">
